@@ -12,6 +12,7 @@ const { getPoints } = storeToRefs(store);
         <v-col cols="3">
           <v-text-field
             v-model="getPoints"
+            variant="solo"
             label="Puntuación: "
             placeholder="0"
             type="number"
