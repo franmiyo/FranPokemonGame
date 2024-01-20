@@ -2,7 +2,7 @@
 import { storeToRefs } from "pinia";
 import { useGeneralStore } from "./stores/GeneralStore.ts";
 const store = useGeneralStore();
-const { getPoints } = storeToRefs(store);
+const { points } = storeToRefs(store);
 </script>
 
 <template>
@@ -11,7 +11,7 @@ const { getPoints } = storeToRefs(store);
       <v-row>
         <v-col cols="3">
           <v-text-field
-            v-model="getPoints"
+            v-model="points"
             variant="solo"
             label="Puntuación: "
             placeholder="0"

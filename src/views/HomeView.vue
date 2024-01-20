@@ -101,7 +101,7 @@ async function reiniciar() {
         <v-card-title>
           {{ answerMessage }}
         </v-card-title>
-        <v-card-subtitle> tienes {{ store.getPoints }} punto/s </v-card-subtitle>
+        <v-card-subtitle> tienes {{ store.points }} punto/s </v-card-subtitle>
         <v-card-actions>
           <v-row justify="center">
             <v-btn @click="cerrar">OK</v-btn>
